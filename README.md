@@ -13,7 +13,8 @@ Vitaj! Toto je tvoj štartový projekt pre predmet **Návrh a tvorba webových s
 
 | Súbor / priečinok | Na čo je |
 | ----------------- | -------- |
-| `index.html` | Tvoja hlavná stránka (zatiaľ len úvodná — čoskoro ju nahradíš svojím portfóliom). |
+| `index.html` | Tvoja hlavná stránka — jej **obsah** (zatiaľ len úvodná — čoskoro ju nahradíš svojím portfóliom). |
+| `styles.css` | **Vzhľad** stránky — farby, písmo, rozloženie (vrstva CSS). |
 | `docs/` | Sem sa uloží tvoj **style guide** (dizajnová referencia z Bloku 6) a neskôr tvoj **design brief** (`zadanie-webu.md`, Blok 11). |
 | `img/` | Sem si budeš dávať **obrázky a fotky** (napr. do portfólia v Bloku 7). |
 | `.gitignore` | Hovorí gitu, čo sa **nikdy** nesmie zverejniť — napríklad súbor `.env` s tajnými kľúčmi. |
