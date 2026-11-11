@@ -581,7 +581,7 @@ h1 {
 
 .about-layout {
   display: grid;
-  grid-template-columns: 110px minmax(0, 1fr) 150px;
+  grid-template-columns: 110px minmax(0, 1fr) 330px;
   align-items: start;
   gap: 42px;
 }
@@ -624,28 +624,20 @@ h1 {
   line-height: 1.9;
 }
 
-.about-stamp {
-  display: flex;
-  width: 136px;
-  aspect-ratio: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  margin-top: 48px;
-  border: 1px solid var(--sage);
-  border-radius: 50%;
-  color: var(--green);
-  font-size: 9px;
-  letter-spacing: 0.12em;
-  line-height: 1.5;
-  text-align: center;
-  transform: rotate(9deg);
+.about-photo {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  margin: 34px 0 0;
+  overflow: hidden;
+  border: 1px solid rgba(24, 58, 42, 0.14);
+  background: var(--sand);
 }
 
-.stamp-leaf {
-  font-size: 21px;
-  line-height: 1;
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .site-footer {
@@ -783,12 +775,12 @@ h1 {
   }
 
   .about-layout {
-    grid-template-columns: 60px minmax(0, 1fr) 110px;
+    grid-template-columns: 60px minmax(0, 1fr) 260px;
     gap: 24px;
   }
 
-  .about-stamp {
-    width: 106px;
+  .about-photo {
+    max-width: 260px;
   }
 }
 
@@ -985,8 +977,11 @@ h1 {
     font-size: 13px;
   }
 
-  .about-stamp {
-    display: none;
+  .about-photo {
+    grid-column: 2;
+    width: min(100%, 460px);
+    max-width: none;
+    margin-top: 24px;
   }
 
   .footer-inner {
