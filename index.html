@@ -3,33 +3,129 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Moje portfólio — začiatok</title>
-  <!-- Vzhľad stránky je v samostatnom súbore styles.css (vrstva CSS) -->
+  <meta name="description" content="Osobné portfólio Tvojho mena. Vybrané digitálne projekty, dizajn a tvorba webov.">
+  <meta name="theme-color" content="#F7F5ED">
+  <title>Tvoje meno — portfólio</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-
-  <main class="uvitanie">
-    <div class="emoji">👋</div>
-    <h1>Tu vznikne moje portfólio</h1>
-    <p class="podtext">
-      Toto je štartová stránka kurzu <strong>Tvorba webstránok</strong>.
-      Odteraz ju budeš meniť ty — s pomocou AI asistenta.
-    </p>
-
-    <div class="karta">
-      <p class="karta-nadpis">Ako začať:</p>
-      <ol>
-        <li>Otvor <strong>Copilot Chat</strong> (ikona Copilota vpravo) — sem píšeš, čo chceš vytvoriť.</li>
-        <li>Tento súbor <code>index.html</code> si pozri v <strong>živom náhľade</strong>: pravý klik naň → <em>Show Preview</em>.</li>
-        <li>Choď na <strong>Blok 7</strong> kurzu a postupuj podľa neho.</li>
-      </ol>
+  <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
+  <header class="site-header">
+    <div class="header-inner page-shell">
+      <a class="brand" href="#domov" aria-label="Tvoje meno, domov">
+        <span class="brand-mark">T<span>.</span></span>
+        <span class="brand-name">Tvoje meno</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Otvoriť navigáciu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Hlavná navigácia">
+        <a href="#projekty">Projekty</a>
+        <a href="#o-mne">O mne</a>
+        <a class="nav-contact" href="#kontakt">Kontakt <span aria-hidden="true">↗</span></a>
+      </nav>
     </div>
+  </header>
 
-    <p class="poznamka">
-      Keď spravíš prvú zmenu, tento text pokojne zmaž — je len na úvod.
-    </p>
+  <main id="obsah">
+    <section class="hero page-shell" id="domov" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Dizajn · web · nápady</p>
+        <h1 id="hero-title">Ahoj, som<br><span class="hero-name">Tvoje meno.</span></h1>
+        <p class="hero-intro">Tvorím premyslené digitálne zážitky, ktoré spájajú čistý dizajn s ľudským prístupom.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projekty">Pozrieť projekty <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="mailto:ahoj@tvojemeno.sk">Napísať mi <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="availability"><span class="availability-dot"></span> Otvorená/ý novým spoluprácam</p>
+      </div>
+      <div class="hero-visual reveal" aria-label="Ukážka tvorivého pracovného priestoru">
+        <div class="hero-image-frame">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Svetlý pracovný priestor so stolom a rastlinami" fetchpriority="high">
+        </div>
+        <div class="hero-note"><span class="note-index">01</span><span>Nápad, ktorý dostane<br>priestor rásť.</span></div>
+        <span class="hero-side-label" aria-hidden="true">PORTFÓLIO · 2026</span>
+      </div>
+      <a class="scroll-cue" href="#projekty"><span class="scroll-line"></span> Posuň sa nižšie</a>
+    </section>
+
+    <section class="projects section-pad" id="projekty" aria-labelledby="projects-title">
+      <div class="page-shell">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Vybrané práce <span class="heading-rule"></span> 2024 — 2026</p>
+            <h2 id="projects-title">Projekty, na ktorých<br><span>mi záležalo.</span></h2>
+          </div>
+          <p class="section-intro">Každý projekt začína otázkou. Tu sú tri odpovede, ktoré dostali svoju vlastnú podobu.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <a class="project-image project-image-matcha" href="#kontakt" aria-label="Viac o projekte Matcha Moment">
+              <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Matcha nápoj v keramickom pohári" loading="lazy">
+              <span class="project-number">01 / 03</span>
+              <span class="image-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-meta"><span>Webový dizajn</span><span>2026</span></div>
+            <h3>Matcha Moment</h3>
+            <p>Digitálny domov pre malú značku s veľkou láskou k japonskému čaju.</p>
+          </article>
+
+          <article class="project-card reveal">
+            <a class="project-image project-image-herbar" href="#kontakt" aria-label="Viac o projekte Mestský herbár">
+              <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Jemná kytica kvetov v prirodzenom svetle" loading="lazy">
+              <span class="project-number">02 / 03</span>
+              <span class="image-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-meta"><span>Identita · web</span><span>2025</span></div>
+            <h3>Mestský herbár</h3>
+            <p>Vizuálna identita a jednoduchý web pre kvetinový ateliér v meste.</p>
+          </article>
+
+          <article class="project-card reveal">
+            <a class="project-image project-image-priestor" href="#kontakt" aria-label="Viac o projekte Tichý priestor">
+              <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Pokojný interiér s prírodnými materiálmi" loading="lazy">
+              <span class="project-number">03 / 03</span>
+              <span class="image-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-meta"><span>Digitálny zážitok</span><span>2024</span></div>
+            <h3>Tichý priestor</h3>
+            <p>Pokojná online prezentácia miesta, ktoré pomáha spomaliť a nadýchnuť sa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-pad" id="o-mne" aria-labelledby="about-title">
+      <div class="page-shell about-layout">
+        <div class="about-marker reveal"><span>O MNE</span><span class="marker-line"></span><span>02 — 03</span></div>
+        <div class="about-copy reveal">
+          <p class="eyebrow">Trochu osobnejšie</p>
+          <h2 id="about-title">Verím v dizajn,<br>ktorý <span>cítiť.</span></h2>
+          <div class="about-bottom">
+            <p>Som tvorivý človek, ktorého baví meniť dobré nápady na zrozumiteľné a príjemné digitálne zážitky. Všímam si malé detaily, no vždy myslím na celok a na ľudí, ktorí budú výsledok používať.</p>
+            <p>Najradšej hľadám rovnováhu medzi funkčnosťou a krásou. Od prvého náčrtu po posledný riadok kódu.</p>
+          </div>
+        </div>
+        <div class="about-stamp reveal" aria-hidden="true"><span>VYTVORENÉ<br>S CITOM</span><span class="stamp-leaf">✳</span></div>
+      </div>
+    </section>
   </main>
 
+  <footer class="site-footer" id="kontakt">
+    <div class="page-shell footer-inner">
+      <div class="footer-top reveal">
+        <p class="eyebrow footer-eyebrow"><span class="eyebrow-dot"></span> Máš nápad?</p>
+        <h2>Poďme mu dať<br><span>dobrú podobu.</span></h2>
+        <a class="footer-email" href="mailto:ahoj@tvojemeno.sk">ahoj@tvojemeno.sk <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="footer-bottom">
+        <a class="brand brand-footer" href="#domov"><span class="brand-mark">T<span>.</span></span><span class="brand-name">Tvoje meno</span></a>
+        <p>Vytvorené s citom a šálkou matchy.</p>
+        <p>© <span id="current-year">2026</span> Tvoje meno</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
